@@ -12,9 +12,9 @@ public class ArchivoLectura {
 	private static BufferedReader bf;
 	private static FileReader is;
 
-	public void openArchiv() {
+	public void openArchiv(String archivo) {
 		try {
-			file = new File("C:\\Users\\Adolfo\\Documents\\LISTA PALABRAS.csv");
+			file = new File(archivo);
 			is = new FileReader(file);
 			bf = new BufferedReader(is);
 			

@@ -10,9 +10,9 @@ public class ArchivoEscritura {
 	private static Formatter salida;
 	
 	
-	public void abrirArchivo() {
+	public void abrirArchivo(String archivo) {
 		try {
-			salida =new  Formatter("C:\\Users\\Adolfo\\Documents\\salida.txt");
+			salida =new  Formatter(archivo+"\\Archivosalida.txt");
 		} catch (Exception e) {
 			// TODO: handle exception
 		}
