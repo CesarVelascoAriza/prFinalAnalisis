@@ -1,5 +1,6 @@
 package co.edu.ucentral.archivo;
 
+import co.edu.ucentral.archivo.metodos.RadixSort;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -11,6 +12,8 @@ public class ArchivoLectura {
 	private static File file;
 	private static BufferedReader bf;
 	private static FileReader is;
+        
+        RadixSort rs ;
 
 	public void openArchiv(String archivo) {
 		try {
