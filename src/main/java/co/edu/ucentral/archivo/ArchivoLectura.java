@@ -13,9 +13,7 @@ public class ArchivoLectura {
 	private static BufferedReader bf;
 	private static FileReader is;
         
-        RadixSort rs ;
-
-	public void openArchiv(String archivo) {
+        public void openArchiv(String archivo) {
 		try {
 			file = new File(archivo);
 			is = new FileReader(file);
