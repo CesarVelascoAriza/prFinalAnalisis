@@ -11,7 +11,7 @@ package co.edu.ucentral.archivo.metodos;
  */
 public class RadixSort {
     
-    private static int[] Vector=null;
+    private static Integer[] Vector=null;
     
     public String ImpArreglo(int[] array)
     {
@@ -28,9 +28,9 @@ public class RadixSort {
         return result;
     }
     
-    public int[] Ordenaradix(int[] array) {
+    public Integer[] Ordenaradix(Integer[] array) {
         Vector = array;    
-        int mayor = 0;
+        double mayor = 0;
         for (int i = 1; i < Vector.length; i++) {
           if (Vector[i] > mayor) {
             mayor = Vector[i];
@@ -45,10 +45,10 @@ public class RadixSort {
         return Vector;
     }
 
-    public void ordenacontando(int posición){
+    public void ordenacontando(Integer posición){
         int tamaño = Vector.length;
-        int[] intercambio = new int[tamaño];
-        int[] cuántosenlaposición = new int[10];
+        Integer[] intercambio = new Integer[tamaño];
+        Integer[] cuántosenlaposición = new Integer[10];
         for(int i = 0; i < tamaño; i++){
             cuántosenlaposición[(Vector[i]/posición)%10]++;
         }

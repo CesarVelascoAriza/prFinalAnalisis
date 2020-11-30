@@ -14,9 +14,15 @@ import java.util.List;
  */
 public class Fila {
     private List<Integer> fila;
+    private String strlinea;
+    private double dblinea;
+    private int hash;
 
-    public Fila(List<Integer> fila) {
+    public Fila(List<Integer> fila, String strlinea,double dblinea, int hash) {
         this.fila = fila;
+        this.strlinea = strlinea;
+        this.dblinea = dblinea;
+        this.hash = hash;
     }
 
     public Fila() {
@@ -29,6 +35,30 @@ public class Fila {
 
     public void setFila(List<Integer> fila) {
         this.fila = fila;
+    }
+
+    public String getStrlinea() {
+        return strlinea;
+    }
+
+    public void setStrlinea(String strlinea) {
+        this.strlinea = strlinea;
+    }
+
+    public int getHash() {
+        return hash;
+    }
+
+    public void setHash(int hash) {
+        this.hash = hash;
+    }
+
+    public double getDblinea() {
+        return dblinea;
+    }
+
+    public void setDblinea(double dblinea) {
+        this.dblinea = dblinea;
     }
     
     public List<Integer> convierteLineatoAscii(String linea) {
